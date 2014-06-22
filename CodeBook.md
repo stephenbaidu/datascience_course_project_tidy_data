@@ -8,11 +8,11 @@ For the provided UCI HAR Dataset the following vars are set from run_analysis.R.
 
 A data.table named `tidy_data_average` is set with the following columns.  All units are maintained from the original data set. A file named tidy_data_average.txt is written from run_analysis.R.
 
-| Column       | Description                                              | Type    |
-| ------------ | -------------------------------------------------------- | ------- |
-| Subject      | Identifier of the subject                                | integer |
-| Activity     | Label of the activity                                    | factor  |
-| Mean.Samples | Mean of variables by Subject + Activity provided in tidy | numeric |
+| Column       | Description                                          | Type    |
+| ------------ | -----------------------------------------------------| ------- |
+| Subject      | Identifier of the subject                            | integer |
+| Activity     | Label of the activity                                | factor  |
+| Mean.Samples | Mean of variables by Subject + Activity in tidy_data | numeric |
 
 ### Tidy Data
 
