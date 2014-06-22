@@ -63,6 +63,8 @@ tidy_data <- tidy_data[,!(names(tidy_data) %in% c("Activity.ID"))]
 tidy_data_average <- ddply(melt(tidy_data, id.vars=c("Subject", "Activity")), .(Subject, Activity), summarise, Mean.Samples=mean(value))
 
 # Write the result to a file
-message("Writing the tidy average to file...")
+message("Writing the tidy_data and tidy_data_average to file...")
+write.csv(tidy_data,         file = "tidy_data.txt",         row.names = FALSE)
 write.csv(tidy_data_average, file = "tidy_data_average.txt", row.names = FALSE)
+
 message("Processing completed!")
