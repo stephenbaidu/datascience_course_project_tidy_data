@@ -1,16 +1,14 @@
 ## Code Book
 
-For the provided UCI HAR Dataset the following vars are set from run_analysis.R.  See the [README](README.md) for additional details.
+Here is the [data source](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) for the analysis.
 
-### Data source for analysis
-
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+For the provided UCI HAR Dataset the following vars are set from run_analysis.R.
 
 ### Tidy Data Average (Mean)
 
 A data.table named `tidy_data_average` is set with the following columns.  All units are maintained from the original data set. A file named tidy_data_average.txt is written from run_analysis.R.
 
-| column       | description                                              | type    |
+| Column       | Description                                              | Type    |
 | ------------ | -------------------------------------------------------- | ------- |
 | Subject      | Identifier of the subject                                | integer |
 | Activity     | Label of the activity                                    | factor  |
